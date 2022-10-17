@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        
+        <div  class="text-center">
+            <H2>MENU DE COMIDAS RESTAURANTE SV</H2>
+        </div>
+
+        <table class="data">
+            <thead>
+             <tr>
+              <th>Platillo</th>
+              <th>Nombre del platillo</th>
+              <th>Pais</th>
+              <th>Precio</th>
+              <th>Receta</th>
+              <th width="20px">Ordenar</th>
+              
+              
+            </tr>
+          </thead>
+            <tbody>
+            <tr>
+                <td > <img src="img/pollo.png" class="img" alt=""></td>
+                <td>POLLO AL HORNO CON VERDURAS</td>
+                <td>El Salvador</td>
+                
+                <td>$3.50</td>
+                <th><button class="boton_receta"  onclick="verReceta(0)"><i class="fas fa-utensils"></i></button></th>
+                <th>
+                    <select name="" id="" >
+
+                        <option value="">Seleccione...</option>
+                        <option value="">A domicilio</option>
+                        <option value="">Recoger en restaurante</option>
+
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <td > <img src="img/tacos.png" class="img" alt=""></td>
+                <td>TACOS MEXICANOS</td>
+                <td>Mexico</td>
+                
+                <td>$5.00</td>
+                <th>  <button class="boton_receta" id="" onclick="verReceta(1)"><i class="fas fa-utensils"></i></button> </th>
+                <th>
+                    <select name="" id="">
+
+                        <option value="">Seleccione...</option>
+                        <option value="">A domicilio</option>
+                        <option value="">Recoger en restaurante</option>
+
+                    </select>
+
+                </th>
+            </tr>
+
+            <tr>
+                <td > <img src="img/pollo2.png" class="img" alt=""></td>
+                <td>PECHUGA DE POLLO A LA BARBACOA</td>
+                <td>El salvador</td>
+                
+                <td>$4.00</td>
+                <th>  <button class="boton_receta" id="" onclick="verReceta(2)"><i class="fas fa-utensils"></i></button> </th>
+                <th>
+                    <select name="" id="">
+
+                        <option value="">Seleccione...</option>
+                        <option value="">A domicilio</option>
+                        <option value="">Recoger en restaurante</option>
+
+                    </select>
+                </th>
+            </tr>
+            </tbody>
+        </table>
+
+
+
+        <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content" style="text-align: center;">
+          <span class="close">&times;</span>
+          <div id="diverror">
+          
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <script src="js/functions.js"></script>
+
+</body>
+</html>
